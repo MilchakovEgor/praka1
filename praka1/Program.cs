@@ -1,27 +1,13 @@
-﻿Console.WriteLine("Выберите какую операцию вы хотите выполнить:");
-Console.WriteLine("1. Сложить два числа");
-Console.WriteLine("2. Вычесть первое из второго");
-Console.WriteLine("3. Перемножить два числа");
-Console.WriteLine("4. Разделить первое на второе");
-Console.WriteLine("5. Возвести в степень N первое число");
-Console.WriteLine("6. Найти квадратный корень из числа");
-Console.WriteLine("7. Найти 1% числа");
-Console.WriteLine("8. Найти факториал числа");
-Console.WriteLine("9. Завершить программу");
-
+Console.WriteLine("1. Сложить два числа\n2. Вычесть первое из второго\n3. Перемножить два числа\n4. Разделить первое на второе\n5. Возвести в степень N первое число\n6. Найти квадратный корень из числа\n7. Найти 1% числа\n8. Найти факториал числа\n9. Завершить программу");
 
 bool c = true;
 do
 {
     int operationNum;
     int a, b, n;
-    Console.Write("Введите номер операции: ");
+    Console.Write("Выберите номер операции: ");
     operationNum = Convert.ToInt32(Console.ReadLine());
 
-    if (operationNum == 9)
-    {
-        c = false;
-    }
     if (operationNum == 1)
     {
         Console.Write("Введите первое число: ");
@@ -89,6 +75,10 @@ do
             factorial *= i;
         }
         Console.Write("Ответ: " + factorial);
+    }
+    if (operationNum == 9)
+    {
+        c = false;
     }
 
 }
